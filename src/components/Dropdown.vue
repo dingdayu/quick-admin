@@ -6,6 +6,12 @@ function dropdownHandler() {
 	visiable.value = false
 }
 
+// 增加一个自定义函数
+function changeLocale(l: string) {
+  locale.value = l
+  localStorage.setItem('language', l)
+}
+
 const { availableLocales, locale } = useI18n()
 </script>
 
@@ -51,7 +57,7 @@ const { availableLocales, locale } = useI18n()
 						"
 						class="block cursor-pointer rounded-lg px-4 py-2 text-sm text-gray-500 hover:text-gray-900"
 						dark="text-light-500 hover:text-light-900"
-						@click="locale = availableLocale"
+						@click="changeLocale(availableLocale)"
 					>
 						{{ availableLocale }}
 					</span>
