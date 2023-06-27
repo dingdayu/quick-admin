@@ -1,6 +1,23 @@
 {
+	"tabWidth": 2,
+	"printWidth": 80,
+	"trailingComma": "none",
 	"semi": false,
 	"singleQuote": true,
-	"endOfLine": "auto"
+	"endOfLine": "auto",
+	"overrides": [
+		{
+		  "files": ["*.json5", "*.json"],
+		  "options": {
+			"singleQuote": false,
+			"quoteProps": "preserve"
+		  }
+		},
+		{
+		  "files": ["*.yml"],
+		  "options": {
+			"singleQuote": false
+		  }
+		}
+	  ]
 }
-
