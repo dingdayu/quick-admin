@@ -27,9 +27,9 @@
 	"explorer.fileNesting.expand": false,
 	"explorer.fileNesting.patterns": {
 		".env": ".env.*",
-		"index.html": "LICENSE,.gitignore,README.md",
-		".eslintrc.json": ".eslint*,.prettier*,.editor*",
-		"vite.config.*": "package.json,uno.config.ts,tsconfig.json,*.toml,.npmrc,renovate.json,CHANGELOG.md"
+		"index.html": "LICENSE,.gitignore,README.md,CHANGELOG.md",
+		".eslintrc.json": ".eslint*,.prettier*,.editor*,.stylelintrc.json,commitlint.config.cjs",
+		"vite.config.*": "package.json,uno.config.ts,tsconfig.json,*.toml,.npmrc,renovate.json"
 	},
 	"[jsonc]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
