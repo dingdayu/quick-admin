@@ -64,7 +64,15 @@ export default function () {
     }),
     // https://github.com/posva/unplugin-vue-router
     Router({
-      routesFolder: 'src/pages',
+      routesFolder: [
+        'src/pages/home',
+        {
+          src: 'src/pages/admin',
+          // note there is always a trailing slash and never a leading one
+          path: 'admin/'
+          // src/admin/routes/dashboard.vue -> /admin/dashboard
+        }
+      ],
       extensions: ['.md', '.vue', '.tsx', '.jsx'],
       dts: 'presets/types/type-router.d.ts'
     }),
@@ -78,9 +86,7 @@ export default function () {
       include: [/\.vue$/, /\.md$/]
     }),
     // 布局系统
-    Layouts({
-      defaultLayout: 'home'
-    }),
+    Layouts(),
     // 调试工具
     env.VITE_APP_DEV_TOOLS && VueDevTools(),
     // mock 服务
