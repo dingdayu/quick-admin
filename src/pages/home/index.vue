@@ -4,7 +4,7 @@
 			<a href="https://github.com/dishait/tov-template" target="_blank">
 				<img src="/logo.png" class="logo" alt="Vite logo" />
 			</a>
-			<a href="https://vitejs.dev" target="_blank">
+			<a id="logo" v-rbac href="https://vitejs.dev" target="_blank">
 				<img src="/vite.svg" class="logo" alt="Vite logo" />
 			</a>
 			<a href="https://vuejs.org/" target="_blank">
@@ -14,6 +14,12 @@
 		<HelloWorld msg="Tov + Vite + Vue" />
 	</div>
 </template>
+
+<route lang="yaml">
+  meta:
+    layout: home
+</route>
+
 
 <style>
 a {

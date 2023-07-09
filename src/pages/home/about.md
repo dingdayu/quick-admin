@@ -10,3 +10,8 @@ console.log("hello");
 
 <!-- 支持嵌入组件 -->
 <Counter />
+
+<route lang="yaml">
+meta:
+  layout: home
+</route>
