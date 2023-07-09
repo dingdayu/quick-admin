@@ -5,7 +5,7 @@ import { SwitchIcon } from 'vue-dark-switch'
 const { t } = useI18n()
 
 const routes = getRoutes()
-	.filter((r) => !r.path.includes('notFound'))
+	.filter((r) => !r.path.includes('notFound') && !r.path.startsWith('/admin'))
 	.map((r) => {
 		let { path, name } = r
 		if (path === '/') {
